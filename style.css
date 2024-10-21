@@ -133,9 +133,9 @@ button:hover {
 /*================  message-section   =====================*/
 
 .messageDiv{
-    background-color: #007bff;
+    background-color: #922d2d;
     color: white;
-    padding: 20px;
+    padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
     font-size: 1.2rem;
