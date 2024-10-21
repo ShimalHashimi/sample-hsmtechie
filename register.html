@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/HSMTechie_logo.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bc0de78847.js" crossorigin="anonymous"></script>
+    <script type="module" src="auth.js"></script>
+</head>
+<body>
+    <div class="nav-section">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="HSMTechie.html">
+                <img src="Images/logo-no-background.png" alt="" width="200" height="70" class="d-inline-block align-text-top">
+                
+            </a>
+            </div>
+        </nav>
+    </div>
+    <hr class="container-fluid">
+
+    <div class="login-container" id="loginContainer">
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="img1" src="Images/PngItem_4014723.png" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div class="login-box">
+                    <h2>Register</h2>
+                    <form id="register-form">
+                        <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="eEmail" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="uUsername" name="username" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="pPassword" name="password" required>
+                        </div>
+                        <button type="submit" id="submitSignUp">Submit</button>
+                        <p>Already have an account? <a href="signin.html">Login here</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js"></script>
+    
+    <script src="register.js"></script>
+</body>
+</html>
