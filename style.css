@@ -1,68 +1,50 @@
-
+*{
+    top: 0;
+    left: 0;
+}
 body{
+     background-color: #f1fdfc;
+}
+.navbar{
+    padding: 20px 40px;
+    padding: 20px 40px 10px 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: #f1fdfc;
 }
-h1{
-    font-size: 3rem;
+.hidden-h1{
+    display: none;
+    color: #0c4058;
+}
+.heading-section{
+    width: 90%;
+    margin: 130px auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.heading img{
+    width: 600px;
+}
+.heading-text{
+    text-align: center;
+}
+.heading-text h1{
+    font-size: 3.2rem;
     font-weight: 700;
     color: #0c4058;
 }
-
-hr{
-    border: solid;
-    border-bottom: none;
-    margin-bottom: 40px;
-    margin-top: 10px;
-}
-
-.img1{
-    width: 100%;
-    margin-top: 20px;
-}
-
-.container-fluid{
-    width: 90%;
-    
-}
-
-.container-fluid button{
-    margin-bottom: 20px;
-    
-}
-
-#title{
-    background-color: #f1fdfc;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-#title p{
+.heading-text p{
+    margin-top: 30px;
     font-size: 1.2rem;
+    font-weight: 400;
 }
-.btn i{
-    padding: 0px 10px;
-}
-
-.nav-section{
-    padding-top: 20px;
-}
-
-#footer{
-    padding: 4%, 15%;
-    text-align: center;
-    background-color: #0c4058;
-    background-origin: 0;
-}
-
-#footer p{
-    padding: 10px;
-}
-
-#footer a{
-    padding: 20px;
+.heading-text button{
     margin-top: 10px;
 }
-
 .bottom-section{
     background-color: #0c4058;
    padding: 20px 0 20px;
@@ -85,25 +67,20 @@ hr{
     color: #4385a4;
 }
 
-.btnn{
-    margin-top: 20px;
-}
-
-
-
-.login-container {
-    margin: 2% 10%;
-    width: 80%;
-    height: 100%;
-    justify-content: center;
+/*================  login-section   =====================*/
+.login-section{
+    width: 90%;
+    margin: 150px auto 80px auto;
+    display: flex;
     align-items: center;
-    z-index: 2;
 }
-
+.login-img img{
+    width: 700px;
+}
 .login-box {
     margin-left: 40px;
     width: 70%;
-    padding: 5%;
+    padding: 20px 60px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -111,7 +88,7 @@ hr{
 }
 
 .login-box h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .input-group {
@@ -133,7 +110,9 @@ hr{
 }
 
 button {
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -147,6 +126,9 @@ button:hover {
     background: #0056b3;
 }
 
+
+/*================  message-section   =====================*/
+
 .messageDiv{
     background-color: #007bff;
     color: white;
@@ -158,10 +140,111 @@ button:hover {
     animation: fadeOut 7s forwards;
 
 }
-
-
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
+    .heading{
+        margin: 120px auto 30px auto;
+    }
+    .heading-text h1{
+        font-size: 3rem;
+    }
+    .heading img{
+        width: 450px;
+    }
+    .heading-text p{
+        margin-top: 10px;
+    }
+    .heading-text button{
+        margin-top:0px;
+    }
+    .login-img img{
+        width: 500px;
+    }
+}
+@media screen and (max-width:1165px) {
+    
+    .heading-text h1{
+        font-size: 2.5rem;
+    }
+    .heading img{
+        width: 400px;
+    }
+    .heading-text button{
+        margin-top:0px;
+    }
+    .login-section{
+        margin: 120px auto 60px auto;
+    }
+    .login-box {
+        margin-left: 20px;
+        width: 80%;
+        padding: 20px 30px;
+    }
+    .login-box h2 {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .hidden-h1{
+        display: block;
+        width: 80%;
+        margin: 30px auto;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .heading-section{
+        margin: 40px auto 50px auto;
+    }
+    .heading-text h1{
+        display: none;
+    }
+    .heading-text p{
+        font-size: 1.1rem;
+    }
+    .heading img{
+        width: 350px;
+    }
+    .login-img img{
+        width: 400px;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .heading{
+        text-align: center;
+    }
+    .hidden-h1{
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .heading-section{
+        margin: 20px auto 50px auto;
+        display: block;
+    }
+    .heading-text h1{
+        display: none;
+    }
+    .heading-text p{
+        font-size: 1.1rem;
+    }
+    .heading img{
+        width: 80%;
+    }
+    .login-section{
+        display: block;
+    }
+    .login-img img{
+        position: absolute;
+        width: 90%;
+        margin-top: 100px;
+        margin-left: 20px;
+        z-index: -1;
+    }
     .login-box{
-        width: 100%;
+        width: 90%;
+        margin: 20px auto;
+        background-color: rgb(255, 255, 255, 0.95);
     }
 }

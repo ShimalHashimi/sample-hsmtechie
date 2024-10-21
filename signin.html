@@ -20,45 +20,42 @@
     <script src="https://kit.fontawesome.com/bc0de78847.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="nav-section">
-        <nav class="navbar navbar-light">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="Images/logo-no-background.png" alt="" width="200" height="70" class="d-inline-block align-text-top">
-                
-            </a>
-            </div>
-        </nav>
-    </div>
-    <hr class="container-fluid">
+    <!--======================  navbar-section  ======================-->
+    <nav class="navbar">
+        <a href="index.html"><img style="width: 150px; height: 50px;" src="Images/logo-no-background.png" alt=""></a>
+    </nav>
 
-    <div class="login-container" id="loginContainer">
-        <div class="row">
-            <div class="col-sm-6">
-                <img class="img1" src="Images/PngItem_4014723.png" alt="">
-            </div>
-            <div class="col-sm-6">
-                <div class="login-box"> 
-                    <h2>Login</h2>
-                    <form id="login-form">
-                        <div class="input-group">
-                            <label for="username">Username</label>
-                            <input type="text" id="username" name="username" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" required>
-                        </div>
-                        <button type="submit">Log In</button>
-                        <p>If you don't have account, <a href="register.html">Register here</a></p>
-                    </form>
+    <!--======================  Login-section  ======================-->
+    <div class="login-section">
+        <div class="login-img"><img src="Images/profile-img.png" alt=""></div>
+        <div class="login-box"> 
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
                 </div>
-            </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Log In</button>
+                <p>If you don't have account, <a href="register.html">Register here</a></p>
+            </form>
         </div>
-        
     </div>
+    
+ <!--====================   footer  Section  ====================-->
 
-    <script src="auth.js"></script>
-    <script src="login.js"></script>
+    <div class="bottom-section">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-solid fa-envelope"></i></a>
+
+
+        <p>© Copyright 2024 HSMTechie (Pvt) Ltd.</p>
+    </div>    
+    
 </body>
 </html>
