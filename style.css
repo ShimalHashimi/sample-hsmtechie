@@ -158,3 +158,10 @@ button:hover {
     animation: fadeOut 7s forwards;
 
 }
+
+
+@media screen and (max-width:1200px) {
+    .login-box{
+        width: 100%;
+    }
+}
