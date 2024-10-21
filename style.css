@@ -45,6 +45,9 @@ body{
 .heading-text button{
     margin-top: 10px;
 }
+.heading-text i{
+    margin-right: 10px;
+}
 .bottom-section{
     background-color: #0c4058;
    padding: 20px 0 20px;
